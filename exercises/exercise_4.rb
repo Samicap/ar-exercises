@@ -13,4 +13,12 @@ storeYaletown = Store.create(name: "Yaletown", annual_revenue: 430000, mens_appa
 
 @mens_stores = Store.where(mens_apparel: true)
 
-puts pp @mens_stores
+# puts pp@mens_stores[0].name
+
+for i in @mens_stores do
+  puts "#{i.name} has an annual revenue of #{i.annual_revenue}."
+end
+
+@womens_stores = Store.where("annual_revenue < ?",1000000).where(womens_apparel: true)
+
+puts pp@womens_stores
