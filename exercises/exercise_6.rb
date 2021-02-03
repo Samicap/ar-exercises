@@ -20,3 +20,6 @@ puts "----------"
 @store2.employees.create(first_name: "Dog", last_name: "Yueu", hourly_rate: 40)
 @store2.employees.create(first_name: "Purple", last_name: "Keiei", hourly_rate: 30)
 
+
+puts pp @store2.employees.where(first_name: "Stacy")
+

@@ -6,6 +6,7 @@ puts "----------"
 
 # Your code goes here ...
 @store1 = Store.find(1)
+# binding.pry
 @store2 = Store.find(2)
 
 # @store1.update(name: "Apple")
